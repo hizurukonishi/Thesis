@@ -1,0 +1,29 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Decomposition of Implementation Shortfall Method}}{2}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Flow chart for trading method selection}}{4}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Correlation coefficient and variable cost in two asset case}}{26}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Numerical solution and approximation for the case with upper limit}}{28}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Whole trading size and average variable cost (small trades)}}{29}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Whole trading size and average variable cost (large trades)}}{30}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison of optimal execution strategy.}}{30}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces $R_1$ and $u_1^*$, $w_1^*$, and $p_1^*$ without constraints}}{43}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces $R_1$ and $u_1^*$, $w_1^*$, and $p_1^*$ with non-negative constraint}}{43}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Time dependency of limit order and market order}}{45}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Time dependency of limit order and market order}}{45}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Number of limit orders and the expected cost}}{50}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Optimal base limit order prices and their sizes}}{51}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Image of $\displaystyle {\begingroup {\mathrm {E}}\left ( \sigma (t,V)^2X(t) \right )\endgroup \over {\mathrm {E}}\left ( \sigma (t,V)^2 \right )}$ and $x(t)$}}{68}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of execution strategies}}{70}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Optimization image}}{71}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison of average optimal execution strategy functions}}{74}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Optimal execution times for two stocks}}{77}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Execution error for two stocks}}{78}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Numerical example of $Y_t$ and $y_t^*$}}{92}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces $g_t$ and $h_t$ for $\sigma _{Y_t}=1$.}}{93}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Graph of VWAP execution errors}}{95}% 
+\addvspace {10\p@ }

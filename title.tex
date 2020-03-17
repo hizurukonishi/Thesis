@@ -1,0 +1,496 @@
+% 02/08 changed abstract according to ref2(2-1)E
+
+\documentclass[a4paper,openany]{book}
+%To convert thesis/paper, change reference of appendix and switch chapter/paper
+
+%For pdflatex.exe.  Also, %\usepackage{ascmac},%\theorembodyfont{\mcfamily},and %\theoremstyle{plain}
+%%%%% delete % for final
+%pdfoutput=1
+%\setlength{\topmargin}{-1.0cm}
+%%%%%
+
+%\setlength{\headheight}{-2.0cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+%\setlength{\textheight}{24.0cm}
+\setlength{\textheight}{22.0cm}
+\setlength{\textwidth}{16.0cm}
+
+%\pagestyle{empty}
+
+\usepackage{theorem}
+%\usepackage{ascmac}
+\usepackage{latexsym}
+\usepackage{graphicx}
+%\usepackage{graphics}
+%\usepackage{verbatim}
+
+\newenvironment{proof}
+{\begin{rm}\par\noindent{\bf Proof.}\quad}{\QED\end{rm}\newline}
+
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{corollary}{Corollary}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{claim}{Claim}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{remark}{Remark}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{conjecture}{Conjecture}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{definition}{Definition}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{example}{Example}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{exercise}{Exercise}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{algorithm}{Algorithm}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{question}{Question}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{formula}{Formula}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{assumption}{Assumption}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{condition}{Condition}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{notation}{Notation}[section]
+%\theorembodyfont{\mcfamily}
+%\theoremstyle{plain}
+\newtheorem{approximation}{Approximation}[section]
+
+%%%%%%%%%\input{c:/ptex/makitex/newcom.tex}
+% newcom.sty  by N. Makimoto 3/9/1996
+% newcommands
+
+% new environment
+
+% new commands
+\newcommand{\mb}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\mbx}[1]{\;\mbox{#1}\;}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\disp}[1]{$\;{\displaystyle #1}\;$}
+\newcommand{\msd}[1]{\;{\displaystyle #1}\;}
+\newcommand{\pow}[2]{{#1}^{#2}}
+\newcommand{\dfrac}[2]{{\displaystyle \frac{#1}{#2}}}
+
+\newcommand{\pr}[1]{{\mathrm{P}}\left( #1 \right)}
+\newcommand{\prtilde}[1]{\tilde{\mathrm{P}}\left( #1 \right)}
+\newcommand{\cpr}[2]{{\mathrm{P}}\left( \left. #1 \, \right| #2 \right)}
+\newcommand{\cprr}[2]{{\mathrm{P}}\left( #1 \, \left| #2 \right. \right)}
+\newcommand{\ex}[1]{{\mathrm{E}}\left( #1 \right)}
+\newcommand{\extilde}[1]{\tilde{\mathrm{E}}\left( #1 \right)}
+\newcommand{\cex}[2]{{\mathrm{E}}\left( \left. #1 \, \right| \, #2 \right)}
+\newcommand{\cextilde}[2]{\tilde{\mathrm{E}}\left( \left. #1 \, \right| \, #2 \right)}
+\newcommand{\cexr}[2]{{\mathrm{E}}\left( #1 \, \left| \, #2 \right. \right)}
+\newcommand{\var}[1]{{\mathrm{V}}\left( #1 \right)}
+\newcommand{\cov}[2]{{\mathrm{Cov}}\left( #1, #2 \right)}
+\newcommand{\cv}[1]{{\mathrm{CV}}\left( #1 \right)}
+
+\newcommand{\comb}[2]{{#1 \choose #2}}
+%\newcommand{\comb}[2]{\mbox{{\footnotesize $\left( \begin{array}{@{}c@{}} #1 \\*[-1.0ex] #2 \end{array} \right)$}}}
+\newcommand{\rto}[2]{#1 \rightarrow #2}
+\newcommand{\lto}[2]{#1 \leftarrow #2}
+\newcommand{\uto}[2]{#1 \uparrow #2}
+\newcommand{\dto}[2]{#1 \downarrow #2}
+\newcommand{\lrto}[2]{#1 \longrightarrow #2}
+\newcommand{\llto}[2]{#1 \longleftarrow #2}
+
+%\newcommand{\dif}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+%\newcommand{\ddif}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\newcommand{\dif}[2]{\frac{d #1}{d #2}}
+\newcommand{\ddif}[2]{\frac{d^2 #1}{d #2^2}}
+\newcommand{\pdif}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\ppdif}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\norm}[1]{\parallel #1 \parallel}
+
+\newcommand{\minv}[1]{\left\{ \  #1 \  \right\}^{-1}}
+\newcommand{\pinv}[1]{\left( \  #1 \  \right)^{-1}}
+%\newcommand{\sinv}[1]{\left[ \  #1 \  \right]^{-1}}
+
+\newcommand{\normal}[2]{\mbox{N}(#1,#2)}
+
+%\newcommand{\ohphead}[1]{\vspace*{-1.5cm} {\LARGE #1} \newline \vspace*{-0.4cm} \noindent
+%\ul{\hspace*{25.0cm}} \newline \vspace*{-0.2cm}}
+
+%%% For landscape %%%
+\newcommand{\ohphead}[1]{\vspace*{-1.5cm} {\LARGE #1} \newline \vspace*{-0.4cm}
+
+\noindent \rule{25.0cm}{3pt}
+
+\vspace*{-21pt}
+
+\noindent \rule{25.0cm}{0.8pt}
+
+\vspace*{-0.2cm}}
+
+%%% For portlate %%%
+\newcommand{\pohphead}[1]{\vspace*{0.0cm} {\LARGE #1} \newline \vspace*{-1.1cm}
+
+\noindent \rule{16.0cm}{3pt}
+
+\vspace*{-21pt}
+
+\noindent \rule{16.0cm}{0.8pt}
+
+\vspace*{-0.2cm}}
+
+% 16/1/1998  modified by Makimoto
+%\newcommand{\ohpfoot}[1]{\noindent \ul{\hspace*{22.0cm}} \newline \vspace*{0.1cm} \hspace*{21.0cm}
+%{\normalsize #1}}
+%\newcommand{\ohpfoot}[2]{\noindent \ul{\hspace*{25.0cm}} \newline \vspace*{-0.4cm}
+%\noindent
+%%% For landscape %%%
+\newcommand{\ohpfoot}[2]{\noindent \rule{25.0cm}{1.0pt}
+
+\vspace*{-0.4cm}
+
+\begin{minipage}{24.0cm}
+ {\small #1} \hfill {\small #2}
+\end{minipage}
+}
+
+%%% For portlate %%%
+\newcommand{\pohpfoot}[2]{\noindent \rule{16.0cm}{1.0pt}
+
+\vspace*{-0.4cm}
+
+\begin{minipage}{15.0cm}
+ {\small #1} \hfill {\small #2}
+\end{minipage}
+}
+
+\newcommand{\stirling}[2]{\mbox{{\footnotesize $\left\{ \begin{array}{@{}c@{}} #1 \\*[-1.0ex] #2 \end{array} \right\}$}}}
+
+\def\riinf{\rightarrow\infty}
+\def\natural{\mbox{I}\!\mbox{N}}
+\def\real{\mbox{I}\!\mbox{R}}
+\def\define{\stackrel{\mathrm{def}}{=}}
+
+\def\BBox{\rule{0.2cm}{0.3cm}}
+\def\QED{\hfill$\Box$}
+%\def\QED{\hfill\BBox}
+
+\def\mbalpha{\mb{\alpha}}
+\def\mbbeta{\mb{\beta}}
+\def\mbgamma{\mb{\gamma}}
+\def\mbdelta{\mb{\delta}}
+\def\mbepsilon{\mb{\epsilon}}
+\def\mbzeta{\mb{\zeta}}
+\def\mbeta{\mb{\eta}}
+\def\mbtheta{\mb{\theta}}
+\def\mbiota{\mb{\iota}}
+\def\mbkappa{\mb{\kappa}}
+\def\mblambda{\mb{\lambda}}
+\def\mbmu{\mb{\mu}}
+\def\mbnu{\mb{\nu}}
+\def\mbxi{\mb{\xi}}
+\def\mbpi{\mb{\pi}}
+\def\mbrho{\mb{\rho}}
+\def\mbsigma{\mb{\sigma}}
+\def\mbtau{\mb{\tau}}
+\def\mbupsilon{\mb{\upsilon}}
+\def\mbphi{\mb{\phi}}
+\def\mbchi{\mb{\chi}}
+\def\mbpsi{\mb{\psi}}
+\def\mbomega{\mb{\omega}}
+
+\def\mbGamma{\mb{\Gamma}}
+\def\mbDelta{\mb{\Delta}}
+\def\mbTheta{\mb{\Theta}}
+\def\mbLambda{\mb{\Lambda}}
+\def\mbXi{\mb{\Xi}}
+\def\mbPi{\mb{\Pi}}
+\def\mbSigma{\mb{\Sigma}}
+\def\mbUpsilon{\mb{\Upsilon}}
+\def\mbPhi{\mb{\Phi}}
+\def\mbPsi{\mb{\Psi}}
+\def\mbOmega{\mb{\Omega}}
+
+\def\mboxd{\mathrm{d}}
+\def\mboxP{\mathrm{P}}
+\def\mboxexp{\mathrm{exp}}
+
+\def\cala{{\cal a}}
+\def\calb{{\cal b}}
+\def\calc{{\cal c}}
+\def\cald{{\cal d}}
+\def\cale{{\cal e}}
+\def\calf{{\cal f}}
+\def\calg{{\cal g}}
+\def\calh{{\cal h}}
+\def\cali{{\cal i}}
+\def\calj{{\cal j}}
+\def\calk{{\cal k}}
+\def\call{{\cal l}}
+\def\calm{{\cal m}}
+\def\caln{{\cal n}}
+\def\calo{{\cal o}}
+\def\calp{{\cal p}}
+\def\calq{{\cal q}}
+\def\calr{{\cal r}}
+\def\cals{{\cal s}}
+\def\calt{{\cal t}}
+\def\calu{{\cal u}}
+\def\calv{{\cal v}}
+\def\calw{{\cal w}}
+\def\calx{{\cal x}}
+\def\caly{{\cal y}}
+\def\calz{{\cal z}}
+
+\def\calA{{\cal A}}
+\def\calB{{\cal B}}
+\def\calC{{\cal C}}
+\def\calD{{\cal D}}
+\def\calE{{\cal E}}
+\def\calF{{\cal F}}
+\def\calG{{\cal G}}
+\def\calH{{\cal H}}
+\def\calI{{\cal I}}
+\def\calJ{{\cal J}}
+\def\calK{{\cal K}}
+\def\calL{{\cal L}}
+\def\calM{{\cal M}}
+\def\calN{{\cal N}}
+\def\calO{{\cal O}}
+\def\calP{{\cal P}}
+\def\calQ{{\cal Q}}
+\def\calR{{\cal R}}
+\def\calS{{\cal S}}
+\def\calT{{\cal T}}
+\def\calU{{\cal U}}
+\def\calV{{\cal V}}
+\def\calW{{\cal W}}
+\def\calX{{\cal X}}
+\def\calY{{\cal Y}}
+\def\calZ{{\cal Z}}
+
+\def\0{\mbox{\bf 0}}
+\def\1{\mbox{\bf 1}}
+\def\2{\mbox{\bf 2}}
+\def\3{\mbox{\bf 3}}
+\def\4{\mbox{\bf 4}}
+\def\5{\mbox{\bf 5}}
+\def\6{\mbox{\bf 6}}
+\def\7{\mbox{\bf 7}}
+\def\8{\mbox{\bf 8}}
+\def\9{\mbox{\bf 9}}
+
+\def\a{\mbox{\boldmath $a$}}
+\def\b{\mbox{\boldmath $b$}}
+\def\c{\mbox{\boldmath $c$}}
+\def\d{\mbox{\boldmath $d$}}
+\def\e{\mbox{\boldmath $e$}}
+\def\f{\mbox{\boldmath $f$}}
+\def\g{\mbox{\boldmath $g$}}
+\def\h{\mbox{\boldmath $h$}}
+\def\i{\mbox{\boldmath $i$}}
+\def\j{\mbox{\boldmath $j$}}
+\def\k{\mbox{\boldmath $k$}}
+\def\l{\mbox{\boldmath $\ell$}}
+\def\ll{\mbox{\boldmath $l$}}
+\def\m{\mbox{\boldmath $m$}}
+\def\n{\mbox{\boldmath $n$}}
+\def\o{\mbox{\boldmath $o$}}
+\def\p{\mbox{\boldmath $p$}}
+\def\q{\mbox{\boldmath $q$}}
+\def\r{\mbox{\boldmath $r$}}
+\def\s{\mbox{\boldmath $s$}}
+\def\t{\mbox{\boldmath $t$}}
+\def\u{\mbox{\boldmath $u$}}
+\def\v{\mbox{\boldmath $v$}}
+\def\w{\mbox{\boldmath $w$}}
+\def\x{\mbox{\boldmath $x$}}
+\def\y{\mbox{\boldmath $y$}}
+\def\z{\mbox{\boldmath $z$}}
+
+\def\A{\mbox{\boldmath $A$}}
+\def\B{\mbox{\boldmath $B$}}
+\def\C{\mbox{\boldmath $C$}}
+\def\D{\mbox{\boldmath $D$}}
+\def\E{\mbox{\boldmath $E$}}
+\def\F{\mbox{\boldmath $F$}}
+\def\G{\mbox{\boldmath $G$}}
+\def\H{\mbox{\boldmath $H$}}
+\def\I{\mbox{\boldmath $I$}}
+\def\J{\mbox{\boldmath $J$}}
+\def\K{\mbox{\boldmath $K$}}
+\def\L{\mbox{\boldmath $L$}}
+\def\M{\mbox{\boldmath $M$}}
+\def\N{\mbox{\boldmath $N$}}
+\def\O{\mbox{\boldmath $O$}}
+\def\P{\mbox{\boldmath $P$}}
+\def\Q{\mbox{\boldmath $Q$}}
+\def\R{\mbox{\boldmath $R$}}
+\def\S{\mbox{\boldmath $S$}}
+\def\T{\mbox{\boldmath $T$}}
+\def\U{\mbox{\boldmath $U$}}
+\def\V{\mbox{\boldmath $V$}}
+\def\W{\mbox{\boldmath $W$}}
+\def\X{\mbox{\boldmath $X$}}
+\def\Y{\mbox{\boldmath $Y$}}
+\def\Z{\mbox{\boldmath $Z$}}
+
+\begin{document}
+\pagenumbering{roman}
+
+%%%%%%%%%
+\begin{titlepage}
+
+\vspace*{2.0cm}
+
+\begin{center}
+{\huge {\bf Optimal Execution of Security Trading}}
+
+\vspace*{2.5cm}
+
+{\huge Hizuru Konishi}
+
+\vspace*{4.5cm}
+
+{\large Submitted in partial fulfillment of the requirements \\
+
+\vspace*{3mm}
+
+for the degree of Doctor of Philosophy}
+
+\vspace*{1.5cm}
+
+{\large
+Graduate School of Systems Management \\
+
+\vspace*{3mm}
+
+University of Tsukuba}
+%3--29--1 Otsuka, Bunkyo--ku  \\
+%Tokyo 112--0012, JAPAN \\
+
+\vspace*{1.5cm}
+
+{\large April \quad 2002}
+
+\end{center}
+
+\end{titlepage}
+
+\addtolength{\baselineskip}{0.5\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%
+\newpage
+
+%%%%%% comment out by Makimoto (2002.03.27)
+%\begin{center}
+%
+%{\Large {\bf Optimal Execution of Security Trading}}
+%
+%\smallskip
+%
+%{\Large by}
+%
+%\smallskip
+%
+%{\Large Hizuru Konishi}
+%
+%\bigskip
+%
+%{\large Submitted to the Graduate School of Systems Management on December 1, 2001, \\ in partial fulfillment of the requirements \\ for the degree of Doctor of Philosophy}
+%
+%\end{center}
+%
+%\bigskip
+%%%%%
+
+\noindent {\huge {\bf Abstract}}
+
+\vspace*{1cm}
+
+\noindent As the investment business becomes increasingly competitive, it has turned out that the trade execution significantly affects investment performance.  As a result, many practitioners have started recognizing trade execution as an independent task.  In contrast, few theoretical research papers have been published on the subject.  Therefore, this study analyzes the optimal trade execution strategies that minimize trading costs for uninformed traders (traders without specific information) whose trading needs are given exogenously.
+
+In practice, there are two main approaches for saving trading costs: 
+\begin{enumerate}
+\item To balance market impact and volatility risk by referring a fixed price in portfolio or block trades.
+\item To mitigate impact of trades by referring volume weighted average price (VWAP henceforth) in VWAP trades.  
+\end{enumerate}
+These approaches are chosen according to trade size, traders' objectives, circumstances, and so forth.  In Approach 1, we analyze a long-term execution scheduling problem and short-term order placement problem since it is difficult to analyze Approach 1 as a whole.  Also, in Approach 2, we analyze both static and dynamic optimization since static optimization works well for numerous small orders while dynamic optimization is more suitable for few large orders.  Therefore, the four cases below are analyzed.
+
+
+\bigskip
+
+\noindent 1. Fixed--Price Trade
+\begin{itemize}
+\item Execution Schedule
+\item Order Placement
+\end{itemize}
+\noindent 2. VWAP Trade
+\begin{itemize}
+\item Static Optimization
+\item Dynamic Optimization
+\end{itemize}
+
+\bigskip
+
+In practice, all securities trading is carried out through some kind of trade execution, regardless of recognition.  At execution, one of the four approaches above is chosen according to the assets' characteristics and the traders' objectives and circumstances.  In order to make an appropriate choice, traders have to deeply understand the nature of the alternatives.  
+
+Although a few analyses have been made about the optimal trade execution based on investigations of the market microstructure, this study derives the optimal execution strategy in each approach, analyzes its characteristics, and provides the guidance to the selection of these approaches.  Therefore, an extensive range of applications can be expected for any security trading.
+
+%%%%% comment out by Makimoto (2002.03.27)
+%\bigskip
+%
+%\noindent Thesis Supervisor: Naoki Makimoto \\
+%Title: Associate Professor of Graduate School of Systems Management
+%%%%%
+
+\newpage
+
+\noindent {\huge {\bf Acknowledgments}}
+
+\vspace*{1cm}
+
+\noindent I greatly appreciate the support of my chief thesis advisor Professor Naoki Makimoto who has been an invaluable resource over the past three years.  My understanding of both the topics relating to this thesis and the directions taken by the research have been shaped to a large extent by his guidance.  The reported work represents an outcome of our collaboration.
+
+I would like to extend special thanks to my associate thesis advisors Professor Hisatoshi Suzuki and Professor Hiroe Tsubaki, who have also offered me a great deal of encouragement and advice.  They have introduced me to several interesting related areas of research.  I also wish to thank anonymous referees at the University of Tsukuba for numerous suggestions that have sharpened the focus of the article.
+
+Interactions with colleagues at Tokyo-Mitsubishi Securities and Tokyo-Mitsubishi International have also been fruitful.  Also, I have benefited greatly from participation in the Trading Technology Research Group.
+
+Finally, I would like to dedicate this work to my wife, Satomi, and two daughters, Sayumi and Megumi, who supported and encouraged me throughout this program at the University of Tsukuba.
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\listoffigures
+\listoftables
+%%%%%%%%%%%%%%%%%%%%%
+
+\input{chap1.tex}
+\input{chap2.tex}
+\input{chap3.tex}
+\input{chap4.tex}
+\input{chap5.tex}
+\input{chap6.tex}
+\input{chap7.tex}
+\input{refer.tex}
+
+\end{document}

@@ -1,0 +1,82 @@
+%02/04 changed the title of 7.5.
+
+%%%%%%%%%%%%%%%
+%Closing Remarks%%
+%%%%%%%%%%%%%%%
+\chapter{Closing Remarks}\label{chap_c}
+\section{Introduction}\label{sec_c1}
+%from (7.1)
+As the investment business becomes increasingly competitive, it has turned out that the trade execution also significantly affects investment performance.  As a result, many practitioners start recognizing trade execution as an independent task.  For example, responsibilities of fund managers and traders are clearly separated in the most institutional investors, and principal trades in which security brokers take responsibility of trade execution has become popular for complicated trading needs while execution risk remains investors' responsibility in conventional agency trades.  In contrast, few theoretical researches can be found about trade execution.  Therefore, this study analyzes the optimal trade execution strategies that minimize trading costs for uninformed traders (traders without specific information) whose trading needs are given exogenously. 
+
+In practice, there are mainly two approaches for saving trading costs: 
+\begin{enumerate}
+\item To balance market impact and volatility risk by referring a fixed price in portfolio or block trades.
+\item To mitigate impact of trades by referring volume weighted average price (VWAP henceforth) in VWAP trades.  
+\end{enumerate}
+These approaches are chosen according to trade size, traders' objectives, circumstances, and so forth.  In our analysis, we divide Approach 1 into long-term execution scheduling problem and short-term order placement problem since it is difficult to analyze Approach 1 as a whole.  Also, in Approach 2, static optimization works well for numerous small orders while dynamic optimization is more suitable for few large orders.  Therefore, the four cases below are analyzed.
+
+\bigskip
+
+\noindent 1. Fixed--Price Trade
+\begin{itemize}
+\item Execution Schedule
+\item Order Placement
+\end{itemize}
+\noindent 2. VWAP Trade
+\begin{itemize}
+\item Static Optimization
+\item Dynamic Optimization
+\end{itemize}
+
+\bigskip
+
+Each issue is explained in the following sections.
+
+%%%%%%%%%%%%%%
+\section{Optimal Slice of a Block Trade}\label{sec_c2}
+%from(3.6)
+Chapter \ref{chap_b} of this study has studied execution scheduling of liquidation of a block trade and formulated it as a static optimization problem.  Based on empirical studies on market microstructure, we have distinguished between temporary market impact and permanent market impact, and assumed that each component to be a linear function of trading volume within moderate volume and time.  Also, we have defined the measure of opportunity cost as standard deviation of price movement, and minimized transaction cost, sum of execution cost and opportunity cost.  Under this framework, we have obtained explicit solutions both for the single-asset case and a multiple-asset portfolio model in the form of pure exponentials.  Further, we have derived an approximation formula when there is a limit to the trading volume executable instantaneously.  
+
+As a result, we have shown that the optimal execution strategy is independent of permanent impact, that optimal execution duration is an increasing function of whole trading size, and that the optimal average cost is an increasing function of whole trading size, price volatility, and temporary impact, and a decreasing function of the limit to instantaneous execution volume, which are all consistent with trading practice and empirical studies.  Specifically, optimal average cost increases as whole trading size to the power of $1/3$ for small orders and $1/2$ for large orders.  Further, it is shown that the transaction cost can be lowered by making order execution late when price movement risk of a portfolio is well diversified.
+
+Our results are immediately applicable to existing risk management framework and provides explicit solution for minimum L-VaR.  Also, although Chapter \ref{chap_b} of this study uses an example of liquidation of a block of common stock, results can be extended over wider problems on liquidation of any large block of assets.
+
+ While Chapter \ref{chap_b} of this study has focused on static optimization, decision change in accordance with new information might be handled by dynamic programming.  Also, this model can reflect more reality by making volatility and market impact time dependent.  Further, it is an interesting issue how to relate order slicing strategy and choice between market order and limit order, and how to control information effect of orders.  These issues are left for further analysis.
+
+%%%%%%%%%%%%%%%%%
+\section{Selection of Market and Limit Order}\label{sec_c3}
+%from (4.5)
+Chapter \ref{chap_l} of this study analyses the optimal selection of market and limit orders in a series of single price batch auctions when the expectation of the limit order book is given.  We derive the analytical solution of a single limit order model for risk neutral traders, and then extend the result for risk averse traders.  Regarding the execution at each period, we find that the optimal limit order size is independent of the whole trade size so as to balance the non--linearity of execution volume and price.  In contrast, the limit order price and the market order size are linear functions in order to balance trading costs across trading periods.  Regarding the execution throughout the trading session, market orders replace limit orders as time passes, and necessity of completing execution grows.  Further, if trading volume and price volatility are larger at the opening and closing of the trading session as in the practical markets, more limit orders are tried at the opening and closing.
+
+Although most traders know the public order book as expectations as in our model, member security brokers are allowed to monitor the public order book without time lags.  So, we evaluate the value of monitoring public order books and provides criteria for selecting stocks to monitor.
+
+Although our results can be extended to multiple limit order models,  mathematical analysis is left for further research.  Besides, while Chapter \ref{chap_l} of this study analyzes batch auctions for simplicity, continuous auction is also of interest.  Also, although Chapter \ref{chap_l} of this study assumes randomness comes only from the number of market orders, the number of limit orders are also stochastic in practice.  Further, we can extend our research to risk averse traders who uses VWAP as a reference price.  Besides, while Chapter \ref{chap_l} of this study performs partial equilibrium type analysis in which public orders are given exogenously, general equilibrium analysis which studies how each trader's strategy interferes is left for further research.
+
+%%%%%%%%%%%%%%%%
+\section{Optimal Slice of a VWAP Trade}\label{sec_c4}
+%from(5.5)
+Chapter \ref{chap_s} of this study derives the static optimal execution strategy of a VWAP trade that minimizes the expected squared execution error.  This method is powerful because the optimal execution strategy is determined by an iteration of a single variable optimization, rather than by a multivariable optimization.  Analytical solutions are derived in some cases.  The following results are obtained through our analysis.  For a single-stock trade, if price volatility is independent of market trading volume, the optimal execution strategy is determined only by the expected market trading volume distribution and is independent of expectations regarding the magnitude and time dependency of price volatility.  If price volatility is positively correlated with market trading volume, optimal execution times turn out to lag behind the expected market trading volume distribution.  This is because once price volatility and market trading volume surge, traders have to make considerable trades to track market trading volume while execution times do not matter when these parameters remain small throughout the day.  In a basket trade, execution error can be reduced by spreading out execution times according to the correlation of price movement.  Further, we examine these theoretical results with actual trading data and simulations.
+
+Chapter \ref{chap_s} of this study focuses on static optimization since observed variables such as price volatility and the market trading volume of small orders with low liquidity may contain statistical errors too large to be used in forecasting, and there are some concerns that dynamic optimization is inaccurate.  However, we might be able to predict the behavior of stocks with frequent trades to some extent, and dynamic optimization may reduce execution error further in such cases.  Dynamic optimization is analyzed in Chapter \ref{chap_d}.
+
+For simplicity, Chapter \ref{chap_s} of this study minimizes execution error caused by price movement.  In the real world, however, the direct cost of market impact and the indirect cost of information leakage are certainly significant factors in a VWAP trade.  This issue is left for further analysis.
+
+%%%%%%%%%%%%%%%%%%%%
+\section{Dynamic Optimal Slice of a VWAP Trade}\label{sec_c5}
+%from(6.4)
+Chapter \ref{chap_d} of this study analyzes an optimal execution strategy of a VWAP trade by dynamic control and derives approximating solution. Non--negative constraint plays an important role in a dynamic strategy because the market trading volume ratio may decrease after big news arrives.  If sell order is not allowed, the optimal execution delays in order to avoid over execution.  Also, if the market trading volume surges, the trader should hold his execution rather than follow the market trading volume.  We confirm execution error reduction by actual trading data.
+
+For simplicity, this analysis studies only one asset execution but not multiple asset execution with diversification effect.  Also, estimating the market trading volume may not be an easy task even with qualitative judgment.  These issues are left for further analysis.
+
+%%%%%%%%%%%%%
+\section{Closing Remarks}\label{sec_c6}
+%from(7.1)
+In practice, all securities trading are carried out through some trade execution, regardless of recognition.  At execution, one of four approaches above are chosen according to assets' characteristics and traders' objectives and circumstances.  In order to make appropriate choice traders have to deeply understand the nature of the alternatives.  
+
+Although few analyses have been made about the optimal trade execution
+based on findings of market microstructure, this study derives the
+optimal execution strategy in each approach, analyzes its
+characteristics, and provides the guidance to the selection of these
+approaches.  Therefore, extensive range of application can be expected
+for any security trading.
+

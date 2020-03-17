@@ -1,0 +1,75 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}% 
+\contentsline {section}{\numberline {1.1}Fixed-Price Trade}{4}% 
+\contentsline {subsection}{\numberline {1.1.1}Execution Schedule}{4}% 
+\contentsline {subsection}{\numberline {1.1.2}Order Placement}{5}% 
+\contentsline {section}{\numberline {1.2}VWAP Trade}{6}% 
+\contentsline {subsection}{\numberline {1.2.1}Static Optimization}{6}% 
+\contentsline {subsection}{\numberline {1.2.2}Dynamic Optimization}{6}% 
+\contentsline {section}{\numberline {1.3}Closing Remarks}{6}% 
+\contentsline {chapter}{\numberline {2}Research Survey}{8}% 
+\contentsline {section}{\numberline {2.1}Introduction}{8}% 
+\contentsline {section}{\numberline {2.2}Market Design}{8}% 
+\contentsline {subsection}{\numberline {2.2.1}Market Pattern}{9}% 
+\contentsline {subsection}{\numberline {2.2.2}Market Impact}{10}% 
+\contentsline {subsection}{\numberline {2.2.3}Limit Order}{11}% 
+\contentsline {subsection}{\numberline {2.2.4}Closing Remarks}{12}% 
+\contentsline {section}{\numberline {2.3}Optimal Strategy}{12}% 
+\contentsline {subsection}{\numberline {2.3.1}Trading Cost}{13}% 
+\contentsline {subsection}{\numberline {2.3.2}Optimal Portfolio Selection}{13}% 
+\contentsline {subsection}{\numberline {2.3.3}Optimal Execution}{14}% 
+\contentsline {subsection}{\numberline {2.3.4}Closing Remarks}{15}% 
+\contentsline {chapter}{\numberline {3}Optimal Slice of a Block Trade}{17}% 
+\contentsline {section}{\numberline {3.1}Introduction}{17}% 
+\contentsline {section}{\numberline {3.2}Formulation of Optimization}{20}% 
+\contentsline {section}{\numberline {3.3}Derivation of the Optimal Execution Strategy}{22}% 
+\contentsline {section}{\numberline {3.4}Limit to Instantaneous Executable Volume}{26}% 
+\contentsline {section}{\numberline {3.5}Principle of Optimality}{31}% 
+\contentsline {section}{\numberline {3.6}Closing Remarks}{32}% 
+\contentsline {section}{\numberline {3.7}Appendix}{32}% 
+\contentsline {subsection}{\numberline {3.7.1}Proof of Lemma 3.3.2\hbox {}}{32}% 
+\contentsline {subsection}{\numberline {3.7.2}Proof of Proposition 3.4.1\hbox {}}{33}% 
+\contentsline {subsection}{\numberline {3.7.3}Proof of Proposition 3.4.2\hbox {}}{34}% 
+\contentsline {chapter}{\numberline {4}Selection of Market and Limit Order}{35}% 
+\contentsline {section}{\numberline {4.1}Introduction}{35}% 
+\contentsline {section}{\numberline {4.2}Standard Single Limit Order Model}{37}% 
+\contentsline {subsection}{\numberline {4.2.1}Formulization of the Strategy}{37}% 
+\contentsline {subsection}{\numberline {4.2.2}Derivation of the Optimal Strategy}{41}% 
+\contentsline {subsection}{\numberline {4.2.3}Multiple Period Case}{44}% 
+\contentsline {section}{\numberline {4.3}Variations of Single Limit Order Model}{46}% 
+\contentsline {subsection}{\numberline {4.3.1}Risk Averse Traders}{46}% 
+\contentsline {subsection}{\numberline {4.3.2}Visible Public Market Orders}{46}% 
+\contentsline {section}{\numberline {4.4}Multiple Limit Order Model}{49}% 
+\contentsline {section}{\numberline {4.5}Closing Remarks}{52}% 
+\contentsline {section}{\numberline {4.6}Appendix}{52}% 
+\contentsline {subsection}{\numberline {4.6.1}Proof of Proposition 4.2.1\hbox {}}{52}% 
+\contentsline {subsection}{\numberline {4.6.2}Proof of Proposition 4.2.2\hbox {}}{53}% 
+\contentsline {chapter}{\numberline {5}Optimal Slice of a VWAP Trade}{63}% 
+\contentsline {section}{\numberline {5.1}Introduction}{63}% 
+\contentsline {section}{\numberline {5.2}Formulization of the Optimal Slicing}{65}% 
+\contentsline {section}{\numberline {5.3}Derivation of the Optimal Strategy: Single-Stock Case}{69}% 
+\contentsline {subsection}{\numberline {5.3.1}Uncorrelated Case: $\sigma $ is uncorrelated with $V$}{69}% 
+\contentsline {subsection}{\numberline {5.3.2} Correlated Case: $\sigma $ is a function of $V$}{70}% 
+\contentsline {section}{\numberline {5.4}Derivation of the Optimal Strategy: Multiple-Stock Case}{74}% 
+\contentsline {subsection}{\numberline {5.4.1}Formulization of the Optimal Slicing}{74}% 
+\contentsline {subsection}{\numberline {5.4.2}Numerical Example}{76}% 
+\contentsline {section}{\numberline {5.5}Closing Remarks}{77}% 
+\contentsline {section}{\numberline {5.6}Appendix}{79}% 
+\contentsline {subsection}{\numberline {5.6.1}Proof of Proposition 5.2.1\hbox {}}{79}% 
+\contentsline {subsection}{\numberline {5.6.2}Proof of Proposition 5.2.2\hbox {}}{79}% 
+\contentsline {subsection}{\numberline {5.6.3}Proof of Proposition 5.3.1\hbox {}}{81}% 
+\contentsline {subsection}{\numberline {5.6.4}Proof of Proposition 5.4.1\hbox {}}{82}% 
+\contentsline {chapter}{\numberline {6}Dynamic Optimal Slice of a VWAP Trade}{84}% 
+\contentsline {section}{\numberline {6.1}Introduction}{84}% 
+\contentsline {section}{\numberline {6.2}Formulization of the Optimal Slicing}{85}% 
+\contentsline {section}{\numberline {6.3}Derivation of the Optimal Strategy}{88}% 
+\contentsline {subsection}{\numberline {6.3.1}Uncorrelated Case}{88}% 
+\contentsline {subsection}{\numberline {6.3.2}Correlated Case}{92}% 
+\contentsline {subsection}{\numberline {6.3.3}Back Tests}{93}% 
+\contentsline {section}{\numberline {6.4}Closing Remarks}{94}% 
+\contentsline {chapter}{\numberline {7}Closing Remarks}{96}% 
+\contentsline {section}{\numberline {7.1}Introduction}{96}% 
+\contentsline {section}{\numberline {7.2}Optimal Slice of a Block Trade}{97}% 
+\contentsline {section}{\numberline {7.3}Selection of Market and Limit Order}{98}% 
+\contentsline {section}{\numberline {7.4}Optimal Slice of a VWAP Trade}{98}% 
+\contentsline {section}{\numberline {7.5}Dynamic Optimal Slice of a VWAP Trade}{99}% 
+\contentsline {section}{\numberline {7.6}Closing Remarks}{99}% 
